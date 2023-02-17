@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
+const cors = require("cors");
 
 // mongodb connect
 const mongoose = require("mongoose");
@@ -14,6 +15,7 @@ mongoose
   });
 
 // middleware
+app.use(cors());
 app.use(express.json());
 
 app.use("/", require("./routes"));

@@ -13,6 +13,8 @@ const {
   getAllCollections,
 } = require("../controller/collections");
 
+
+
 // user routes
 router.get("/users", getAllUsers);
 router.delete("/users", deleteUser);
