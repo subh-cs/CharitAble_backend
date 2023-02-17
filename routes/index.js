@@ -16,8 +16,8 @@ const {
 
 
 // user routes
-router.get("/users", getAllUsers);
-router.delete("/users", deleteUser);
+router.get("/users", getAllUsers); // for admin only
+router.delete("/users", deleteUser); // for admin only
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 // donation routes
